@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagas Cadastradas</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/model/Vaga.js" defer></script>
+    <script src="../js/controller/VagaController.js" defer></script>
+    <script src="../js/app.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Controle de Estacionamento</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="vagas.html">Vagas cadastradas</a>
+            <a href="cadastro.html">Nova reserva</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Vagas Cadastradas</h2>
+        <p>Consulte as reservas realizadas no condomínio.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Vaga</th>
+                    <th>Placa</th>
+                    <th>Proprietário</th>
+                    <th>Apartamento</th>
+                    <th>Veículo</th>
+                    <th>Cor</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+
+            <tbody id="listaVagas">
+                <tr>
+                    <td>01</td>
+                    <td>ABC1D23</td>
+                    <td>João Silva</td>
+                    <td>101 - A</td>
+                    <td>Honda Civic</td>
+                    <td>Preto</td>
+                    <td><button type="button">Remover</button></td>
+                </tr>
+
+                <tr>
+                    <td>02</td>
+                    <td>XYZ2E45</td>
+                    <td>Maria Souza</td>
+                    <td>202 - B</td>
+                    <td>Fiat Argo</td>
+                    <td>Branco</td>
+                    <td><button type="button">Remover</button></td>
+                </tr>
+
+                <tr>
+                    <td>05</td>
+                    <td>DEF3F67</td>
+                    <td>Pedro Santos</td>
+                    <td>305 - A</td>
+                    <td>Volkswagen Polo</td>
+                    <td>Prata</td>
+                    <td><button type="button">Remover</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+</body>
+</html>

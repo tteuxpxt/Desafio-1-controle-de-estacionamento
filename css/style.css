@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+header {
+  background-color: #163a63;
+  color: white;
+  padding: 25px;
+}
+
+header h1 {
+  margin-bottom: 20px;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #9ecbff;
+}
+
+main {
+  max-width: 1100px;
+  margin: 35px auto;
+  padding: 20px;
+}
+
+main h2 {
+  margin-bottom: 10px;
+  color: #163a63;
+}
+
+main p {
+  margin-bottom: 25px;
+}
+
+.resumo {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  flex: 1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.card p {
+  font-size: 28px;
+  font-weight: bold;
+  color: #163a63;
+  margin-bottom: 0;
+}
+
+.vagas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.vaga {
+  padding: 25px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.ocupada {
+  background-color: #f8d7da;
+  color: #842029;
+}
+
+.livre {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  max-width: 650px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #163a63;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #24588e;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #163a63;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f1f4f8;
+}
+
+.lista-vazia {
+  color: #666;
+  font-style: italic;
+  text-align: center;
+}
+
+.botao-remover {
+  background-color: #b42318;
+}
+
+.botao-remover:hover {
+  background-color: #8f1d14;
+}
+
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .resumo {
+    flex-direction: column;
+  }
+
+  .vagas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
